@@ -1,5 +1,5 @@
 <div class="container" *ngIf="pokemonAtual">
-  <h1 class="pokemon-data1" *ngIf="pokemonAnterior">
+  <h1 class="pokemon-data1" *ngIf="pokemonAnterior" (click)="setPokemonAtual(pokemonAnterior)">
     <span class="pokemon-id">nº{{ pokemonAnterior.id }}-</span>
     <span class="pokemon-nome">{{ pokemonAnterior.name }}</span>
   </h1>
@@ -9,7 +9,7 @@
     <span class="pokemon-nome">{{ pokemonAtual.name }}</span>
   </h1>
   
-  <h1 class="pokemon-data3" *ngIf="pokemonProximo">
+  <h1 class="pokemon-data3" *ngIf="pokemonProximo" (click)="setPokemonAtual(pokemonProximo)">
     <span class="pokemon-id">nº{{ pokemonProximo.id }}-</span>
     <span class="pokemon-nome">{{ pokemonProximo.name }}</span>
   </h1>

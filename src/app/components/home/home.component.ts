@@ -22,7 +22,7 @@
     constructor(private pokeApiService: PokeAPIService) {}
   
     ngOnInit(): void {
-      this.carregarPokemon(5); // Começa pelo ID 1
+      this.carregarPokemon(2); // Começa pelo ID 1
     }
   
     carregarPokemon(id: number): void {
@@ -74,6 +74,11 @@ buscarPokemon(): void {
     this.pokemonAtual = this.pokemonAnterior = this.pokemonProximo = null;
   });
 }
+
+setPokemonAtual(pokemon: any): void {
+  this.carregarPokemon(pokemon.id);
+}
+
 
   }
 
