@@ -1,0 +1,81 @@
+.container{
+    display: inline-block;
+    position: relative;
+    
+    .form{
+        position: absolute;
+        top: 39%;
+        left: 12%;
+      
+        .input-search{
+            width: 110%;
+            padding: 4%;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+    }
+
+    .pokemon-icon1{
+        position: absolute;
+        top: 56%;
+        left: 57%
+    }
+
+    .pokemon-icon2{
+        position: absolute;
+        top: 64%;
+        left: 53%
+    }
+
+    .pokemon-icon3{
+        position: absolute;
+        top: 73%;
+        left: 50%
+    }
+
+    .pokemon-data1{
+        position: absolute;
+        top: 53%;
+        left: 66%;
+        
+    }
+    
+    .pokemon-data2{
+        position: absolute;
+        top: 61%;
+        left: 62%;
+    }
+
+    .pokemon-data3{
+        position: absolute;
+        top: 69%;
+        left: 58%;
+
+    }
+
+    .pokemon-icon{
+        animation: jump 0.5s infinite ease-in-out;
+
+    }
+    
+    @keyframes jump{
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    
+    .pokedex{
+        max-width: 100%;
+    }
+
+    .pokemon{
+        position: absolute;
+        bottom: 33%;
+        left: 16%;
+        min-height: 20%;
+    }
+}
