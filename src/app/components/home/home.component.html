@@ -26,8 +26,15 @@
     <img class="pokemon" [src]="getPokemonImageIcon(pokemonProximo.id)">
   </div>
 
-  <form class="form">
-    <input type="search" class="input-search" placeholder="Nome ou Número do PkM" required>
+  <form class="form" (submit)="buscarPokemon()">
+    <input
+      type="search"
+      class="input-search"
+      placeholder="Nome ou Número do PkM"
+      [(ngModel)]="busca"
+      name="busca"
+      required
+    >
   </form>
 
   <img class="pokemon" [src]="getPokemonImageGif(pokemonAtual.id)">
