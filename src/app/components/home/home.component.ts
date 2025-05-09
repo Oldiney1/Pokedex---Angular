@@ -77,13 +77,10 @@ export class HomeComponent implements OnInit {
         this.busca = '';
         this.pokemonAtual = this.pokemonAnterior = this.pokemonProximo = null;
   
-        this.carregarPokemon(2); // 👈 Volta para o Pokémon 2
+        this.carregarPokemon(2);
       }
     );
   }
-  
-  
-  
 
   setPokemonAtual(pokemon: any): void {
     this.carregarPokemon(pokemon.id);
