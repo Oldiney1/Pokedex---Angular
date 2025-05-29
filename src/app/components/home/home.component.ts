@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   constructor(private pokeApiService: PokeAPIService) { }
 
   ngOnInit(): void {
-    this.carregarPokemon(2);
+    this.carregarPokemon(1);
   }
 
   carregarPokemon(id: number): void {
@@ -34,17 +34,25 @@ export class HomeComponent implements OnInit {
         this.pokeApiService.getPokemonById(id - 1).subscribe(pokeAnt => {
           this.pokemonAnterior = pokeAnt;
         });
+        
       } else {
         this.pokemonAnterior = null;
       }
-
+      
+  
+      
       if (id < 151) {
         this.pokeApiService.getPokemonById(id + 1).subscribe(pokeProx => {
           this.pokemonProximo = pokeProx;
         });
+
       } else {
         this.pokemonProximo = null;
       }
+      
+  
+      
+      
     });
   }
 

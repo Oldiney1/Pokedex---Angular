@@ -15,7 +15,7 @@
   </h1>
   
   <div class="pokemon-icon1">
-    <img class="pokemon" [src]="getPokemonImageIcon(pokemonAnterior.id)">
+    <img class="pokemon" [src]="getPokemonImageIcon(pokemonAnterior?.id)">
   </div>
   
   <div class="pokemon-icon2">
@@ -23,7 +23,7 @@
   </div>
 
   <div class="pokemon-icon3">
-    <img class="pokemon" [src]="getPokemonImageIcon(pokemonProximo.id)">
+    <img class="pokemon" [src]="getPokemonImageIcon(pokemonProximo?.id)">
   </div>
 
   <form class="form" (submit)="buscarPokemon()">
