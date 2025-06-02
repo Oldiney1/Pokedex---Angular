@@ -39,8 +39,6 @@ export class HomeComponent implements OnInit {
         this.pokemonAnterior = null;
       }
       
-  
-      
       if (id < 151) {
         this.pokeApiService.getPokemonById(id + 1).subscribe(pokeProx => {
           this.pokemonProximo = pokeProx;
@@ -49,9 +47,6 @@ export class HomeComponent implements OnInit {
       } else {
         this.pokemonProximo = null;
       }
-      
-  
-      
       
     });
   }

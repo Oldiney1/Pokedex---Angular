@@ -1,42 +1,46 @@
-<div class="container" *ngIf="pokemonAtual">
-  <h1 class="pokemon-data1" *ngIf="pokemonAnterior" (click)="setPokemonAtual(pokemonAnterior)">
-    <span class="pokemon-id">nº{{ pokemonAnterior.id }}-</span>
-    <span class="pokemon-nome">{{ pokemonAnterior.name }}</span>
-  </h1>
-  
-  <h1 class="pokemon-data2">
-    <span class="pokemon-id">nº{{ pokemonAtual.id }}-</span>
-    <span class="pokemon-nome">{{ pokemonAtual.name }}</span>
-  </h1>
-  
-  <h1 class="pokemon-data3" *ngIf="pokemonProximo" (click)="setPokemonAtual(pokemonProximo)">
-    <span class="pokemon-id">nº{{ pokemonProximo.id }}-</span>
-    <span class="pokemon-nome">{{ pokemonProximo.name }}</span>
-  </h1>
-  
-  <div class="pokemon-icon1">
-    <img class="pokemon" [src]="getPokemonImageIcon(pokemonAnterior?.id)">
-  </div>
-  
-  <div class="pokemon-icon2">
-    <img class="pokemon pokemon-icon" [src]="getPokemonImageIcon(pokemonAtual.id)">
-  </div>
+<div class="container-pai">
 
-  <div class="pokemon-icon3">
-    <img class="pokemon" [src]="getPokemonImageIcon(pokemonProximo?.id)">
+  <div class="container" *ngIf="pokemonAtual">
+    <h1 class="pokemon-data1" *ngIf="pokemonAnterior" (click)="setPokemonAtual(pokemonAnterior)">
+      <span class="pokemon-id">nº{{ pokemonAnterior.id }}-</span>
+      <span class="pokemon-nome">{{ pokemonAnterior.name }}</span>
+    </h1>
+    
+    <h1 class="pokemon-data2">
+      <span class="pokemon-id">nº{{ pokemonAtual.id }}-</span>
+      <span class="pokemon-nome">{{ pokemonAtual.name }}</span>
+    </h1>
+    
+    <h1 class="pokemon-data3" *ngIf="pokemonProximo" (click)="setPokemonAtual(pokemonProximo)">
+      <span class="pokemon-id">nº{{ pokemonProximo.id }}-</span>
+      <span class="pokemon-nome">{{ pokemonProximo.name }}</span>
+    </h1>
+    
+    <div class="pokemon-icon1">
+      <img class="pokemon" [src]="getPokemonImageIcon(pokemonAnterior?.id)">
+    </div>
+    
+    <div class="pokemon-icon2">
+      <img class="pokemon pokemon-icon" [src]="getPokemonImageIcon(pokemonAtual.id)">
+    </div>
+  
+    <div class="pokemon-icon3">
+      <img class="pokemon" [src]="getPokemonImageIcon(pokemonProximo?.id)">
+    </div>
+  
+    <form class="form" (submit)="buscarPokemon()">
+      <input
+        type="search"
+        class="input-search"
+        placeholder="Nome ou Número do PkM"
+        [(ngModel)]="busca"
+        name="busca"
+        required
+      >
+    </form>
+  
+    <img class="pokemon" [src]="getPokemonImageGif(pokemonAtual.id)">
+    <img src="assets/images/rotom_phone.png" class="pokedex">
+    <img src="assets/images/rotom_phone2.png" class="pokedex-2">
   </div>
-
-  <form class="form" (submit)="buscarPokemon()">
-    <input
-      type="search"
-      class="input-search"
-      placeholder="Nome ou Número do PkM"
-      [(ngModel)]="busca"
-      name="busca"
-      required
-    >
-  </form>
-
-  <img class="pokemon" [src]="getPokemonImageGif(pokemonAtual.id)">
-  <img src="assets/images/rotom_phone.png" class="pokedex">
 </div>
