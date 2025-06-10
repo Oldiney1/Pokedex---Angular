@@ -98,7 +98,7 @@
         }
 
         .pokedex-2 {
-            display: block;
+            display: flex;
         }
 
         .container{
@@ -152,11 +152,6 @@
                 position: absolute;
                 top: 76%;
                 left: 14%;
-    
-            }
-    
-            .pokemon-icon{
-                animation: jump 0.5s infinite ease-in-out;
     
             }
     
