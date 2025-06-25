@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
         this.pokemonAnterior = null;
       }
       
-      if (id < 151) {
+      if (id < 649) {
         this.pokeApiService.getPokemonById(id + 1).subscribe(pokeProx => {
           this.pokemonProximo = pokeProx;
         });
