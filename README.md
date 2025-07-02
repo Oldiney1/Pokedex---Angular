@@ -35,20 +35,20 @@ O principal objetivo deste projeto foi **aprender e praticar o consumo de APIs R
 
 ## 💻 Como rodar localmente
 
-1. Clone o repositório colando a seguinte linha de comando no terminal:
+**1. Clone o repositório colando a seguinte linha de comando no terminal:**
 
 ```bash
 git clone https://github.com/Oldiney1/Pokedex-Angular.git
 ```
 
-2. Com a pasta do projeto aberta, abra um novo terminal e cole a seguinte linha de comando:
+**2. Com a pasta do projeto aberta, abra um novo terminal e cole a seguinte linha de comando:**
 
 ```bash
 npm install
 ```
 Esse comando instala as dependências necessárias pra rodar o projeto.
 
-3. Inicie o servidor do projeto com a seguinte linha de comando:
+**3. Inicie o servidor do projeto com a seguinte linha de comando:**
 
 ```bash
 ng serve
