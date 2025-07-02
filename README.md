@@ -5,7 +5,8 @@
 
 <div align="center">
     <img src="src\assets\images\projeto - pokeapi.png">
-</div>
+</div><br>
+
 
 Este é um projeto de **Pokédex** desenvolvido com **Angular** que consome dados da [PokeAPI](https://pokeapi.co/). A aplicação permite visualizar informações sobre diversos Pokémon, incluindo nome, imagem, tipo, habilidades e outros detalhes relevantes.
 
@@ -44,12 +45,12 @@ git clone https://github.com/Oldiney1/Pokedex-Angular.git
 
 ```bash
 npm install
-# Esse comando instala as dependências necessárias pra rodar o projeto.
 ```
+Esse comando instala as dependências necessárias pra rodar o projeto.
 
 3. Inicie o servidor do projeto com a seguinte linha de comando:
 
 ```bash
 ng serve
-# No terminal irá aparecer o LocalHost.
 ```
+No terminal irá aparecer o LocalHost.
